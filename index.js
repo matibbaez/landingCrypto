@@ -8,5 +8,6 @@ toggler.addEventListener('click', function () {
 const scroll = document.getElementById("scroll");
 
 scroll.addEventListener('click', () => {
+    console.log('Scroll button clicked'); // Add this line
     document.querySelector(".get-started").scrollIntoView({ behavior: 'smooth' });
 })

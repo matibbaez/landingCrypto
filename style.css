@@ -11,6 +11,10 @@ body{
     background-color: #fafafa;
 }
 
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
 
 /* Firefox */
 * {
@@ -174,7 +178,7 @@ body{
 .top-container .header{
     margin: 0;
     color: #fff;
-    font-size: 3.7rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 55px;
     text-transform: uppercase;
@@ -189,7 +193,7 @@ body{
 
 .top-container span{
 	transition: all .4s cubic-bezier(.15,.75,.45,.95) 0s;
-	animation: 10s ease 0s infinite alternate none running rainbow;
+	animation: 5s ease 0s infinite alternate none running rainbow;
 }
 
 
@@ -335,7 +339,7 @@ body{
 
 .get-started .info-text{
 	transition: all .4s cubic-bezier(.15,.75,.45,.95) 0s;
-	animation: 10s ease 0s infinite alternate none running rainbow;
+	animation: 5s ease 0s infinite alternate none running rainbow;
 }
 
 .get-started .items-box{
@@ -855,7 +859,7 @@ body{
 
 .market-update .info-text{
 	transition: all .4s cubic-bezier(.15,.75,.45,.95) 0s;
-	animation: 10s ease 0s infinite alternate none running rainbow;
+	animation: 5s ease 0s infinite alternate none running rainbow;
 }
 
 
@@ -887,7 +891,7 @@ body{
 
 .join-content h2 span{
 	transition: all .4s cubic-bezier(.15,.75,.45,.95) 0s;
-	animation: 10s ease 0s infinite alternate none running rainbow;
+	animation: 5s ease 0s infinite alternate none running rainbow;
 }
 
 .join-content p {
@@ -909,6 +913,31 @@ body{
 /*  Media query  */
 
 @media screen and (max-width: 800px) {
+    .top-container .header {
+
+        font-size: 3.25rem;
+    }
+
+    .get-started .header {
+        align-self: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 3.25rem;
+        line-height: 50px;
+    }
+
+    .market-update .header {
+        text-align: center;
+        font-size: 3.25rem;
+        line-height: 50px;
+    }
+
+
+
+    .market-update .info-text {
+        font-size: 1.4rem;
+    }
+
     .coin{
         display: flex;
         width: 340px;
@@ -943,15 +972,6 @@ body{
         height: 52px;
     }
 
-    .market-update {
-        margin-top: 3rem;
-    }
-
-    .market-update .header{
-        text-align: center;
-        font-size: 3rem;
-    }
-
     .market-update .info-text{
         text-align: center;
         margin-top: 10px;
@@ -981,13 +1001,12 @@ body{
 
     .get-started .header {
         text-align: center;
-        font-size: 3rem;
     }
 
     .get-started .info-text{
         margin-top: 10px;
         margin-bottom: 20px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .join-content h2{
@@ -1002,5 +1021,9 @@ body{
     .join-content a{
         font-size: 1.10rem;
         padding: 1rem 2rem;
+    }
+
+    .copyright p {
+        text-align: center;
     }
 }
