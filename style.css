@@ -700,6 +700,14 @@ html {
     transition: .2s;
 }
 
+.footer .back-home a{
+    font-size: 2.4rem;
+    color: white;
+    display: flex;
+	animation: move_vector 3s ease-in-out infinite;
+}
+
+
 .tooltip {
     position: absolute;
     background-color: black;
@@ -932,7 +940,11 @@ html {
         line-height: 50px;
     }
 
+    .main .footer {
+        flex-direction: row;
+    }
 
+    
 
     .market-update .info-text {
         font-size: 1.4rem;
