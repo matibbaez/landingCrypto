@@ -943,6 +943,10 @@ body{
         height: 52px;
     }
 
+    .market-update {
+        margin-top: 3rem;
+    }
+
     .market-update .header{
         text-align: center;
         font-size: 3rem;
@@ -969,6 +973,10 @@ body{
     .choose-container__content__2 img{
         margin-top: 25px;
         margin-bottom: 25px;
+    }
+
+    .get-started {
+        margin-top: 3rem;
     }
 
     .get-started .header {
