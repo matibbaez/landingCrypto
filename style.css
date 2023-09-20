@@ -43,6 +43,22 @@ body{
 }
 
 
+.choose-container__content__2 img{
+    animation: move_vector 3s ease-in-out infinite;
+}
+
+@keyframes move_vector {
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
 .main{
     padding: 0 88px;
     position: relative;
@@ -161,6 +177,7 @@ body{
     font-size: 3.7rem;
     font-weight: 700;
     line-height: 55px;
+    text-transform: uppercase;
 }
 
 /* .top-container span {
@@ -199,8 +216,8 @@ body{
     margin: 20px 0 32px;
     color: #fff;
     font-size: 1.4rem;
-    line-height: 20px;
-    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 600;
 }
 
 .top-container .info-buttons{
@@ -209,10 +226,10 @@ body{
 
 .top-container .info-btn{
     cursor: pointer;
-    padding: 8px 38px;
+    padding: 8px 25px;
     border-radius: 16px;
-    font-weight: 500;
-    font-size: 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -233,11 +250,11 @@ body{
     animation: toLeft 0.8s;
 }
 
+
 .top-container .nft-pic{
     object-fit: cover;
     width: 350px;
     height: 350px;
-
     /* Crear un media query con el tamaño en 300px */
 
     border-radius: 1.6rem;
@@ -709,7 +726,7 @@ body{
     visibility: hidden; /* Cambiar visibility a hidden para ocultar inicialmente el tooltip */
     transition: .1s;
     position: absolute;
-    top: -1.8rem; /* Ajustar la posición hacia arriba para que esté sobre el icono */
+    top: -2.3rem; /* Ajustar la posición hacia arriba para que esté sobre el icono */
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap; /* Evitar que el texto se divida en varios renglones */
